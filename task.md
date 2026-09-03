@@ -1,0 +1,21 @@
+# Portfolio Website — Tasks
+
+- `[x]` Project scaffolding (Vite + React + TS)
+- `[x]` Install dependencies (Tailwind v4, Motion, Lucide)
+- `[/]` Configuration (vite.config, index.html, index.css)
+- `[/]` Data layer (projects, skills, experience, navigation)
+- `[/]` Hooks & utilities (useActiveSection, animations)
+- `[/]` Components
+  - `[/]` SectionHeading
+  - `[/]` Navbar
+  - `[/]` Hero
+  - `[/]` About
+  - `[/]` Skills
+  - `[/]` Projects + ProjectCard
+  - `[/]` Experience
+  - `[/]` Education
+  - `[/]` Contact
+  - `[/]` Footer
+- `[/]` App.tsx assembly
+- `[ ]` Generate project thumbnail images
+- `[ ]` Build verification
