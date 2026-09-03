@@ -89,7 +89,7 @@ export default function Hero() {
         variants={portraitVariants}
         initial="hidden"
         animate="visible"
-        className="absolute inset-0 z-[2] w-full h-full object-cover object-top pointer-events-none select-none"
+        className="absolute inset-0 z-[2] w-full h-full lg:left-16 object-cover object-top pointer-events-none select-none"
       />
       <div
         className="absolute top-0 inset-x-0 h-36 md:h-44 z-[20] pointer-events-none"
