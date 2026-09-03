@@ -24,12 +24,12 @@ export default function Skills() {
             >
               <h3 className="text-lg font-semibold text-[#fafafa] mb-4">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill: string, skillIdx: number) => (
+                {category.skills.map((skill, skillIdx) => (
                   <span
                     key={skillIdx}
                     className="inline-block bg-[#18181b] text-[#a1a1aa] px-3 py-1.5 rounded-lg text-sm border border-[#27272a] hover:border-blue-500/50 hover:text-blue-400 transition-colors"
                   >
-                    {skill}
+                    {skill.name}
                   </span>
                 ))}
               </div>

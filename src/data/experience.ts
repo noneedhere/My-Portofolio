@@ -1,3 +1,9 @@
+// ============================================================
+// TODO: Update your experience, education, and certifications.
+// - Replace company names, roles, periods, descriptions
+// - Add/remove entries as needed
+// ============================================================
+
 export interface Experience {
   company: string;
   role: string;

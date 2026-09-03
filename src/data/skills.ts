@@ -1,3 +1,8 @@
+// ============================================================
+// TODO: Update your skills below.
+// - Add/remove skill categories and individual skills as needed
+// ============================================================
+
 export interface Skill {
   name: string;
 }

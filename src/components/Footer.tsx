@@ -1,4 +1,5 @@
 import { navLinks } from '@/data/navigation';
+import { personal } from '@/data/personal';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
@@ -9,8 +10,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
           <div className="text-center md:text-left">
-            <span className="text-lg font-bold text-[#fafafa]">Your Name</span>
-            <p className="text-sm text-[#71717a] mt-1">Junior Fullstack Web Developer</p>
+            {/* TODO: Update name in personal.ts */}
+            <span className="text-lg font-bold text-[#fafafa]">{personal.name}</span>
+            <p className="text-sm text-[#71717a] mt-1">{personal.role}</p>
           </div>
           
           <ul className="flex flex-wrap justify-center gap-6">
@@ -24,20 +26,21 @@ export default function Footer() {
           </ul>
           
           <div className="flex items-center gap-4">
-            <a href="#" className="text-[#71717a] hover:text-blue-400 transition-colors">
+            {/* TODO: Update URLs in personal.ts */}
+            <a href={personal.githubUrl} target="_blank" rel="noopener noreferrer" className="text-[#71717a] hover:text-blue-400 transition-colors">
               <Github size={20} />
             </a>
-            <a href="#" className="text-[#71717a] hover:text-blue-400 transition-colors">
+            <a href={personal.linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-[#71717a] hover:text-blue-400 transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="#" className="text-[#71717a] hover:text-blue-400 transition-colors">
+            <a href={`mailto:${personal.email}`} className="text-[#71717a] hover:text-blue-400 transition-colors">
               <Mail size={20} />
             </a>
           </div>
         </div>
         
         <div className="text-center text-xs text-[#71717a]">
-          © {currentYear} Your Name. All rights reserved.
+          © {currentYear} {personal.name}. All rights reserved.
         </div>
       </div>
     </footer>

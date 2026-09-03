@@ -1,4 +1,12 @@
+// ============================================================
+// TODO: Update your projects below.
+// - Replace titles, descriptions, tags, and features
+// - Replace githubUrl / liveUrl with your actual links
+// - Replace image paths (place screenshots in /public/images/)
+// ============================================================
+
 export interface Project {
+  id?: string;
   title: string;
   description: string;
   tags: string[];
