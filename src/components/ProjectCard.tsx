@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
-import { Github, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { GithubIcon } from './icons';
 import { fadeUp } from '@/utils/animations';
 import { Project } from '@/data/projects';
 
@@ -8,7 +9,7 @@ interface ProjectCardProps {
   index: number;
 }
 
-export default function ProjectCard({ project, index }: ProjectCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <motion.div
       variants={fadeUp}
@@ -37,13 +38,13 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
         <div className="flex gap-4 mt-6 pt-4 border-t border-[#27272a]">
           {project.githubUrl && (
-            <a href={project.githubUrl} className="flex items-center gap-1.5 text-sm text-[#a1a1aa] hover:text-blue-400 transition-colors">
-              <Github size={16} />
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-sm text-[#a1a1aa] hover:text-blue-400 transition-colors">
+              <GithubIcon size={16} />
               Code
             </a>
           )}
           {project.liveUrl && (
-            <a href={project.liveUrl} className="flex items-center gap-1.5 text-sm text-[#a1a1aa] hover:text-blue-400 transition-colors">
+            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-sm text-[#a1a1aa] hover:text-blue-400 transition-colors">
               <ExternalLink size={16} />
               Live Demo
             </a>

@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from './icons';
 import { fadeUp, staggerContainer } from '@/utils/animations';
 import { personal } from '@/data/personal';
 
@@ -33,10 +34,10 @@ export default function Contact() {
         <motion.div variants={fadeUp} className="flex justify-center items-center gap-6">
           {/* TODO: Update URLs in personal.ts */}
           <a href={personal.githubUrl} target="_blank" rel="noopener noreferrer" className="text-[#a1a1aa] hover:text-blue-400 transition-colors">
-            <Github size={24} />
+            <GithubIcon size={24} />
           </a>
           <a href={personal.linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-[#a1a1aa] hover:text-blue-400 transition-colors">
-            <Linkedin size={24} />
+            <LinkedinIcon size={24} />
           </a>
           <a href={`mailto:${personal.email}`} className="text-[#a1a1aa] hover:text-blue-400 transition-colors">
             <Mail size={24} />

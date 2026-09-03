@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
-import { ArrowUpRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowUpRight, Mail } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from './icons';
 import { fadeUp, staggerContainer, fadeIn } from '@/utils/animations';
 import { personal } from '@/data/personal';
 
@@ -57,7 +58,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 rounded-full border border-[#27272a] text-[#a1a1aa] hover:border-blue-500 hover:text-blue-400 transition-colors bg-[#111113]"
           >
-            <Github size={20} />
+            <GithubIcon size={20} />
           </a>
           <a
             href={personal.linkedinUrl}
@@ -65,7 +66,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 rounded-full border border-[#27272a] text-[#a1a1aa] hover:border-blue-500 hover:text-blue-400 transition-colors bg-[#111113]"
           >
-            <Linkedin size={20} />
+            <LinkedinIcon size={20} />
           </a>
           <a
             href={`mailto:${personal.email}`}

@@ -2,20 +2,25 @@
 
 - `[x]` Project scaffolding (Vite + React + TS)
 - `[x]` Install dependencies (Tailwind v4, Motion, Lucide)
-- `[/]` Configuration (vite.config, index.html, index.css)
-- `[/]` Data layer (projects, skills, experience, navigation)
-- `[/]` Hooks & utilities (useActiveSection, animations)
-- `[/]` Components
-  - `[/]` SectionHeading
-  - `[/]` Navbar
-  - `[/]` Hero
-  - `[/]` About
-  - `[/]` Skills
-  - `[/]` Projects + ProjectCard
-  - `[/]` Experience
-  - `[/]` Education
-  - `[/]` Contact
-  - `[/]` Footer
-- `[/]` App.tsx assembly
-- `[ ]` Generate project thumbnail images
-- `[ ]` Build verification
+- `[x]` Configuration (vite.config, index.html, index.css)
+- `[x]` Data layer (projects, skills, experience, navigation, personal)
+- `[x]` Hooks & utilities (useActiveSection, animations)
+- `[x]` Components
+  - `[x]` SectionHeading
+  - `[x]` Navbar
+  - `[x]` Hero
+  - `[x]` About
+  - `[x]` Skills
+  - `[x]` Projects + ProjectCard
+  - `[x]` Experience
+  - `[x]` Education
+  - `[x]` Contact
+  - `[x]` Footer
+  - `[x]` Custom icons (GitHub, LinkedIn SVGs)
+- `[x]` App.tsx assembly
+- `[x]` Build verification (TypeScript + Vite build pass)
+- `[ ]` **YOU:** Fill in personal info in `src/data/personal.ts`
+- `[ ]` **YOU:** Add portrait photo to `public/portrait.jpg`
+- `[ ]` **YOU:** Update project URLs in `src/data/projects.ts`
+- `[ ]` **YOU:** Update experience/education in `src/data/experience.ts`
+- `[ ]` **YOU:** Update name in `index.html` title & meta tags

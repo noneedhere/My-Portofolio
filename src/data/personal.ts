@@ -6,7 +6,7 @@
 
 export const personal = {
   // TODO: Replace with your full name
-  name: 'Your Name',
+  name: 'Zidane Rosyidi',
 
   // TODO: Replace with your role / title
   role: 'Junior Fullstack Web Developer',
@@ -15,20 +15,20 @@ export const personal = {
   heroTagline: 'Building modern, scalable, and user-focused web applications with clean code.',
 
   // TODO: Replace with your email address
-  email: 'contact@yourname.com',
+  email: 'zidanerosyidi@gmail.com',
 
   // TODO: Replace with your GitHub profile URL
-  githubUrl: 'https://github.com/yourusername',
+  githubUrl: 'https://github.com/noneedhere',
 
   // TODO: Replace with your LinkedIn profile URL
-  linkedinUrl: 'https://linkedin.com/in/yourusername',
+  linkedinUrl: 'https://www.linkedin.com/in/zidane-rosyidi-6b438333b/',
 
   // TODO: Replace with path to your portrait photo
   //       Place your photo in /public/portrait.jpg
-  portraitSrc: '/portrait.jpg',
+  portraitSrc: '/images/Darkthemephoto.png',
 
   // TODO: Replace with your portrait alt text
-  portraitAlt: 'Your Name — Fullstack Web Developer',
+  portraitAlt: 'Zidane Rosyidi — Fullstack Web Developer',
 
   // TODO: Replace with your about section paragraphs
   aboutParagraphs: [

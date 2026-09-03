@@ -1,6 +1,7 @@
 import { navLinks } from '@/data/navigation';
 import { personal } from '@/data/personal';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from './icons';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -28,10 +29,10 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             {/* TODO: Update URLs in personal.ts */}
             <a href={personal.githubUrl} target="_blank" rel="noopener noreferrer" className="text-[#71717a] hover:text-blue-400 transition-colors">
-              <Github size={20} />
+              <GithubIcon size={20} />
             </a>
             <a href={personal.linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-[#71717a] hover:text-blue-400 transition-colors">
-              <Linkedin size={20} />
+              <LinkedinIcon size={20} />
             </a>
             <a href={`mailto:${personal.email}`} className="text-[#71717a] hover:text-blue-400 transition-colors">
               <Mail size={20} />
