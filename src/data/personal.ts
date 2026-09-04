@@ -25,7 +25,7 @@ export const personal = {
 
   // TODO: Replace with path to your portrait photo
   //       Place your photo in /public/portrait.jpg
-  portraitSrc: '/images/Darkthemephoto_dekstop.png',
+  portraitSrc: '/images/Darkthemephotoname_dekstop.png',
 
   // TODO: Replace with your portrait alt text
   portraitAlt: 'Zidane Rosyidi — Fullstack Web Developer',

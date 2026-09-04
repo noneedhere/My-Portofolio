@@ -9,7 +9,7 @@ export default function About() {
     <section id="about" className="py-24">
       <div className="max-w-6xl mx-auto px-6">
         <SectionHeading title="About Me" />
-        
+
         <div className="md:grid md:grid-cols-2 gap-12">
           <motion.div
             variants={fadeUp}
@@ -18,12 +18,11 @@ export default function About() {
             viewport={{ once: true, margin: '-100px' }}
             className="flex flex-col gap-6 text-[#a1a1aa] text-lg leading-relaxed"
           >
-            {/* TODO: Edit aboutParagraphs in personal.ts */}
             {personal.aboutParagraphs.map((paragraph, idx) => (
               <p key={idx}>{paragraph}</p>
             ))}
           </motion.div>
-          
+
           <motion.div
             variants={staggerContainer}
             initial="hidden"

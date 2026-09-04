@@ -18,7 +18,7 @@ export default function Experience() {
         >
           {experience.map((exp, idx) => (
             <motion.div key={idx} variants={fadeUp} className="relative">
-              <div className="absolute -left-[calc(1.5rem+5px)] top-1.5 w-3 h-3 rounded-full bg-blue-500 border-2 border-[#09090b]" />
+              <div className="absolute -left-7.25 top-1.5 w-3 h-3 rounded-full bg-blue-500 border-2 border-[#09090b]" />
               
               <h3 className="text-lg font-semibold text-[#fafafa]">{exp.company}</h3>
               <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 mt-1 mb-3">
