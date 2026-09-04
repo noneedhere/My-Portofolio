@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowUpRight, Mail } from 'lucide-react';
+import { ArrowUpRight, Download, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './icons';
 import { personal } from '@/data/personal';
 import type { ReactNode } from 'react';
@@ -133,15 +133,28 @@ export default function Hero() {
           {personal.heroTagline}
         </p>
 
-        <motion.a
-          href="#contact"
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.97 }}
-          className="inline-flex items-center gap-2 mt-5 md:mt-7 bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-base font-medium px-6 py-3 rounded-full transition-colors"
-        >
-          Let's Work Together
-          <ArrowUpRight size={18} />
-        </motion.a>
+        <div className="flex flex-wrap items-center gap-3 mt-5 md:mt-7">
+          <motion.a
+            href="#contact"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+            className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-base font-medium px-6 py-3 rounded-full transition-colors"
+          >
+            Let's Collaborate
+            <ArrowUpRight size={18} />
+          </motion.a>
+
+          <motion.a
+            href="/Resume_Muhammad_Zidane_Fawwaz_Rosyidi.pdf"
+            download
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+            className="inline-flex items-center gap-2 border border-[#27272a] bg-[#111113]/70 backdrop-blur-sm text-[#e4e4e7] hover:border-blue-500/40 hover:text-blue-400 text-sm md:text-base font-medium px-6 py-3 rounded-full transition-colors"
+          >
+            Download CV
+            <Download size={18} />
+          </motion.a>
+        </div>
       </motion.div>
       <motion.div
         variants={socialContainerVariants}
