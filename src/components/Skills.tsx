@@ -2,32 +2,23 @@ import { motion } from 'motion/react';
 import SectionHeading from './SectionHeading';
 import { skillCategories } from '@/data/skills';
 import { fadeUp, staggerContainer } from '@/utils/animations';
-import {
-  NextjsIcon,
-  ReactIcon,
-  NodejsIcon,
-  ExpressIcon,
-  MySQLIcon,
-  GitIcon,
-  GitHubTechIcon,
-} from './TechIcons';
-import type { ReactNode } from 'react';
 
-// ── Featured tech stack with branded icons ───────────────────
+// ── Featured tech stack using SVG files from /icon/ ─────────
 interface FeaturedSkill {
   name: string;
-  icon: ReactNode;
-  color: string; // hover ring / glow color
+  icon: string; // path to SVG in /public/icon/
+  color: string; // hover glow color
+  invert?: boolean; // invert dark icons for visibility on dark bg
 }
 
 const featuredStack: FeaturedSkill[] = [
-  { name: 'Next.js', icon: <NextjsIcon size={36} />, color: '#fff' },
-  { name: 'React.js', icon: <ReactIcon size={36} />, color: '#61DAFB' },
-  { name: 'Node.js', icon: <NodejsIcon size={36} />, color: '#83CD29' },
-  { name: 'Express.js', icon: <ExpressIcon size={36} />, color: '#a1a1aa' },
-  { name: 'MySQL', icon: <MySQLIcon size={36} />, color: '#00618A' },
-  { name: 'Git', icon: <GitIcon size={36} />, color: '#F34F29' },
-  { name: 'GitHub', icon: <GitHubTechIcon size={36} />, color: '#e4e4e7' },
+  { name: 'Next.js', icon: '/icon/Next.js.svg', color: '#ffffff', invert: true },
+  { name: 'React.js', icon: '/icon/React.svg', color: '#61DAFB' },
+  { name: 'Node.js', icon: '/icon/Node.js.svg', color: '#83CD29' },
+  { name: 'Express.js', icon: '/icon/Express.svg', color: '#a1a1aa', invert: true },
+  { name: 'MySQL', icon: '/icon/MySQL.svg', color: '#00618A' },
+  { name: 'Git', icon: '/icon/Git.svg', color: '#F34F29' },
+  { name: 'GitHub', icon: '/icon/GitHub.svg', color: '#e4e4e7', invert: true },
 ];
 
 // ── Animation variants ───────────────────────────────────────
@@ -75,11 +66,6 @@ export default function Skills() {
                 transition: { duration: 0.25, ease: 'easeOut' },
               }}
               className="group relative flex flex-col items-center gap-3 w-[100px] sm:w-[110px] py-5 rounded-2xl border border-[#27272a] bg-[#111113] cursor-default transition-colors duration-300 hover:border-opacity-60"
-              style={
-                {
-                  '--tech-color': tech.color,
-                } as React.CSSProperties
-              }
             >
               {/* Glow effect on hover */}
               <div
@@ -90,9 +76,15 @@ export default function Skills() {
                   borderRadius: 'inherit',
                 }}
               />
-              <div className="relative text-[#a1a1aa] group-hover:text-[#fafafa] transition-colors duration-300">
-                {tech.icon}
-              </div>
+              <img
+                src={tech.icon}
+                alt={tech.name}
+                width={36}
+                height={36}
+                className="relative select-none"
+                style={tech.invert ? { filter: 'brightness(0) invert(1)' } : undefined}
+                draggable={false}
+              />
               <span className="relative text-xs font-medium text-[#71717a] group-hover:text-[#a1a1aa] transition-colors duration-300">
                 {tech.name}
               </span>
