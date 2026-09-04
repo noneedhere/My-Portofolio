@@ -24,7 +24,9 @@ export default function Contact() {
         <motion.div variants={fadeUp} className="mb-12">
           {/* TODO: Update email in personal.ts */}
           <a
-            href={`mailto:${personal.email}`}
+            href="https://wa.link/gqwmhp"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full font-medium transition-colors"
           >
             Say Hello

@@ -135,7 +135,9 @@ export default function Hero() {
 
         <div className="flex flex-wrap items-center gap-3 mt-5 md:mt-7">
           <motion.a
-            href="#contact"
+            href="https://wa.link/gqwmhp"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-base font-medium px-6 py-3 rounded-full transition-colors"
