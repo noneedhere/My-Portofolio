@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
-import { fadeUp, staggerContainer } from '@/utils/animations';
+import { fadeUp } from '@/utils/animations';
 import SectionHeading from './SectionHeading';
-import { Code2, Server, BookOpen } from 'lucide-react';
 import { personal } from '@/data/personal';
 
 interface FeaturedSkill {
@@ -44,73 +43,55 @@ const iconContainerVariants = {
 
 export default function About() {
   return (
-    <section id="about" className="pt-24 pb-16">
+    <section id="about" className="py-16">
       <div className="max-w-6xl mx-auto px-6">
         <SectionHeading title="About Me" />
 
-        <div className="md:grid md:grid-cols-2 gap-12">
+        <div className="md:grid md:grid-cols-2 gap-12 items-center">
+          {/* about content */}
           <motion.div
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
-            className="flex flex-col gap-6 text-[#a1a1aa] text-lg leading-relaxed"
+            className="flex items-center justify-center mb-8 md:mb-0"
+          >
+            <div className="relative w-full max-w-sm overflow-hidden rounded-2xl border border-[#27272a]">
+              <img
+                src={personal.aboutImageSrc}
+                alt={personal.portraitAlt}
+                className="w-full h-auto object-cover"
+                draggable={false}
+              />
+              {/* subtle gradient overlay at the bottom */}
+              <div
+                className="absolute inset-x-0 bottom-0 h-16 pointer-events-none"
+                style={{
+                  background:
+                    'linear-gradient(to top, rgba(17,17,19,0.6) 0%, transparent 100%)',
+                }}
+              />
+            </div>
+          </motion.div>
+
+          {/* Description - right column */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-100px' }}
+            className="flex flex-col justify-center gap-6 text-[#a1a1aa] text-lg leading-relaxed"
           >
             {personal.aboutParagraphs.map((paragraph, idx) => (
               <p key={idx}>{paragraph}</p>
             ))}
           </motion.div>
-
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-100px' }}
-            className="mt-12 md:mt-0 flex flex-col gap-4"
-          >
-            <motion.div variants={fadeUp} className="bg-[#111113] border border-[#27272a] p-6 rounded-2xl flex items-start gap-4">
-              <div className="bg-blue-500/10 p-3 rounded-lg text-blue-500">
-                <Code2 size={24} />
-              </div>
-              <div>
-                <h3 className="text-[#fafafa] font-semibold text-lg">4+ Projects</h3>
-                <p className="text-[#a1a1aa] text-sm mt-1">Built full-stack applications with modern tech.</p>
-              </div>
-            </motion.div>
-
-            <motion.div variants={fadeUp} className="bg-[#111113] border border-[#27272a] p-6 rounded-2xl flex items-start gap-4">
-              <div className="bg-blue-500/10 p-3 rounded-lg text-blue-500">
-                <Server size={24} />
-              </div>
-              <div>
-                <h3 className="text-[#fafafa] font-semibold text-lg">Fullstack Focus</h3>
-                <p className="text-[#a1a1aa] text-sm mt-1">Experience in both frontend UI and backend APIs.</p>
-              </div>
-            </motion.div>
-
-            <motion.div variants={fadeUp} className="bg-[#111113] border border-[#27272a] p-6 rounded-2xl flex items-start gap-4">
-              <div className="bg-blue-500/10 p-3 rounded-lg text-blue-500">
-                <BookOpen size={24} />
-              </div>
-              <div>
-                <h3 className="text-[#fafafa] font-semibold text-lg">Always Learning</h3>
-                <p className="text-[#a1a1aa] text-sm mt-1">Continuously improving my skills and knowledge.</p>
-              </div>
-            </motion.div>
-            <motion.div
-              variants={iconContainerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: '-80px' }}
-              className="flex flex-wrap justify-center gap-4 sm:gap-5 mb-14"
-            >
-            </motion.div>
-          </motion.div>
         </div>
       </div>
 
+
       {/* tech icons */}
-      <div className='max-w-6xl mx-auto px-6 flex flex-wrap gap-8 relative items-center justify-center'>
+      <div className='max-w-6xl mx-auto px-6 pt-20 flex flex-wrap gap-8 relative items-center justify-center'>
         {featuredStack.map((tech) => (
           <motion.div
             key={tech.name}

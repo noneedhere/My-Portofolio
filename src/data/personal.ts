@@ -39,6 +39,8 @@ export const personal = {
     'My main focus is fullstack web development, which covers both frontend and backend. On the frontend, I am experienced in building user interfaces using React.js, Next.js, TypeScript and Tailwind CSS. On the backend, I work with Node.js, Express.js, Django and Prisma ORM, which connect to a MySQL database.',
   ],
 
+  aboutImageSrc: '/images/AboutPhoto.png',
+
   // TODO: Replace with your contact CTA text
   contactHeading: 'Have a project in mind?',
   contactSubtext:
