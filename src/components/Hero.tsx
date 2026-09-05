@@ -3,7 +3,6 @@ import { ArrowUpRight, Download, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from './icons';
 import { personal } from '@/data/personal';
 import type { ReactNode } from 'react';
-import { FaInstagram } from "react-icons/fa";
 
 // ── Typed social links data ──────────────────────────────────
 interface SocialLink {
