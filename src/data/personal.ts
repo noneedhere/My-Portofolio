@@ -35,9 +35,8 @@ export const personal = {
 
   // TODO: Replace with your about section paragraphs
   aboutParagraphs: [
-    "I'm a Junior Fullstack Web Developer with a passion for building modern, scalable, and user-focused web applications. My journey in software development started with a curiosity for how things work on the web, which quickly evolved into a deep commitment to mastering both frontend and backend technologies.",
-    'I specialize in building applications using React, TypeScript, Next.js, and Node.js, with experience in database design and API development. I enjoy turning complex problems into clean, intuitive digital solutions.',
-    'Currently seeking opportunities to grow as a developer, contribute to meaningful projects, and collaborate with teams that value clean code and great user experience.',
+    "I'm Muhammad Zidane Fawwaz Rosyidi, a fresh graduate from SMK Telkom Malang with a background in Software Engineering. I hold a BNSP Junior Web Developer certification, and I'm currently focused on building a career as a Junior Fullstack Web Developer.",
+    'My main focus is fullstack web development, which covers both frontend and backend. On the frontend, I am experienced in building user interfaces using React.js, Next.js, TypeScript and Tailwind CSS. On the backend, I work with Node.js, Express.js, Django and Prisma ORM, which connect to a MySQL database.',
   ],
 
   // TODO: Replace with your contact CTA text

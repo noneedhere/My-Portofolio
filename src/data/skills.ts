@@ -23,6 +23,8 @@ export const skillCategories: SkillCategory[] = [
       { name: 'HTML' },
       { name: 'CSS' },
       { name: 'Tailwind CSS' },
+      { name: 'Blade' },
+      { name: 'Vanilla JS' },
     ],
   },
   {
@@ -32,6 +34,7 @@ export const skillCategories: SkillCategory[] = [
       { name: 'Express.js' },
       { name: 'Python' },
       { name: 'Django' },
+      { name: 'PHP' },
     ],
   },
   {
@@ -51,6 +54,10 @@ export const skillCategories: SkillCategory[] = [
       { name: 'Vite' },
       { name: 'WordPress' },
       { name: 'Odoo' },
+      { name: 'Laravel' },
+      { name: 'Postman' },
+      { name: 'Laragon' },
+      { name: 'Xampp' },
     ],
   },
 ];
