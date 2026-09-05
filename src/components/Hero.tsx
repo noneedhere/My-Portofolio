@@ -1,8 +1,9 @@
 import { motion } from 'motion/react';
 import { ArrowUpRight, Download, Mail } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from './icons';
+import { GithubIcon, LinkedinIcon, InstagramIcon } from './icons';
 import { personal } from '@/data/personal';
 import type { ReactNode } from 'react';
+import { FaInstagram } from "react-icons/fa";
 
 // ── Typed social links data ──────────────────────────────────
 interface SocialLink {
@@ -21,6 +22,11 @@ const socialLinks: SocialLink[] = [
     label: 'LinkedIn',
     href: personal.linkedinUrl,
     icon: <LinkedinIcon size={16} />,
+  },
+  {
+    label: 'Instagram',
+    href: personal.instagramUrl,
+    icon: <InstagramIcon size={16} />,
   },
   {
     label: 'Email',

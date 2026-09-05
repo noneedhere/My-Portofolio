@@ -23,6 +23,9 @@ export const personal = {
   // TODO: Replace with your LinkedIn profile URL
   linkedinUrl: 'https://www.linkedin.com/in/zidane-rosyidi-6b438333b/',
 
+  // TODO: Replace with your Instagram profile URL
+  instagramUrl: 'https://www.instagram.com/zidane_rosyidi/',
+
   // TODO: Replace with path to your portrait photo
   //       Place your photo in /public/portrait.jpg
   portraitSrc: '/images/Darkthemephotoname_dekstop.png',
